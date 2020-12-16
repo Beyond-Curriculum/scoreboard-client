@@ -1,0 +1,106 @@
+.What{
+    padding: 48px 0;
+}
+
+.What p{
+    color: var(--textSecondary);
+    font-size: 18px;
+}
+
+.What a{
+    font-weight: bold;
+    box-shadow: inset 0 -.07em 0 var(--primary);
+    transition: box-shadow .27s cubic-bezier(.77,0,.175,1), color .27s cubic-bezier(.77,0,.175,1);
+}
+
+.What a:hover{
+    box-shadow: inset 0 -.85em 0 var(--primarySemiTransparent);
+    color: var(--text)!important;
+}
+
+.timeline {
+    padding: 32px 0;
+    position: relative;
+}
+
+.timeline::after {
+    position: absolute;
+    top: 0;
+    content: "";
+    display: block;
+    height: 100%;
+    width: 1px;
+    background: linear-gradient(to bottom, transparent 0%, var(--border) 10%, var(--border) 90%, transparent 100%);
+    left: 50%;
+}
+
+.timelineBlock {
+    position: relative;
+    padding: 24px;
+    background-color: var(--back);
+    box-shadow: 0 0 0 1px var(--border) inset;
+    border-radius: 13px;
+    margin: 16px 0;
+    width: calc(50% - 32px);
+}
+
+.timelineBlock::after {
+    position: absolute;
+    top: 50%;
+    content: "";
+    display: block;
+    height: 1px;
+    width: 32px;
+    background-color: var(--border);
+    right: -32px;
+}
+
+.timelineBlock:nth-child(even) {
+    margin-left: auto;
+}
+
+.timelineBlock:nth-child(even)::after {
+    left: -32px;
+    right: unset;
+}
+
+.timelineTitle {
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 1.2;
+    margin-top: 4px;
+}
+
+.timelineDate {
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 13px;
+    color: var(--textSecondary);
+}
+
+.section{
+    padding-top: 32px;
+}
+
+@media (max-width: 768px) {
+    .timelineBlock {
+        width: 100%;
+        margin: 24px 0;
+    }
+    .timelineBlock:nth-child(even) {
+        margin-left: unset;
+    }
+    .timelineBlock::after {
+        display: none;
+    }
+    .timelineDate{
+        font-size: 10px;
+    }
+    .timelineTitle{
+        font-size: 18px;
+    }
+    .timeline::after {
+        z-index: -1;
+    }
+
+}

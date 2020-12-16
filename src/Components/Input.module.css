@@ -1,0 +1,38 @@
+.Input {
+  display: flex;
+  flex-direction: column;
+}
+.Input > * {
+  display: block;
+}
+
+.Input label {
+  font-size: 10px;
+  font-weight: 600;
+  margin-bottom: 6px;
+  text-transform: uppercase;
+  color: var(--textSecondary);
+}
+
+.Input label:empty{
+  margin: 0;
+}
+
+.Input input, .Input textarea {
+  appearance: none;
+  font-size: 16px;
+  padding: 8px 14px;
+  border: 1px var(--border) solid;
+  background-color: var(--back);
+  color: var(--text);
+  border-radius: 5px;
+}
+
+.Input textarea{
+  min-height: 42px;
+}
+
+.Input input:focus, .Input textarea:focus {
+  border-color: var(--primary);
+  outline: none;
+}

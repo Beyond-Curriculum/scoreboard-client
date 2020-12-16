@@ -1,38 +1,80 @@
-.App {
-  text-align: center;
+body {
+  --text: #222222;
+  --textSecondary: #585a5f;
+  --border: #eaeaea;
+  --back: #ffffff;
+  --backTransparent: rgba(255,255,255,0);
+  --backSemiTransparent: rgba(255,255,255,0.8);
+  --primary: #242424;
+  --primaryTransparent: rgba(36, 36, 36, .2);
+  --primaryLighter: #3f3f3f;
+  --green: #2ccc89;
+  --blue: #00aaff;
+  --red: #f54849;
+  --primarySemiTransparent: rgba(36, 36, 36, .2);
+  color: var(--text);
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  background-color: var(--back);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body.dark {
+  --text: #fff;
+  --textSecondary: #c0c0c0;
+  --border: #3d3d3d;
+  --back: rgb(15, 15, 15);
+  --backTransparent: rgba(15, 15, 15, 0);
+  --backSemiTransparent: rgba(15,15,15,0.8);
+  --primary: #ffffff;
+  --primaryTransparent: rgba(255, 255, 255, 0);
+  --primarySemiTransparent: rgba(255, 255, 255, .2);
+  --primaryLighter: #e7e7e7;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+body.scrollDisabled {
+  overflow: hidden;
+}
+
+.container {
+  max-width: 900px;
+  padding: 0 24px;
+  margin: auto;
+}
+
+a {
+  color: var(--primary) !important;
+  text-decoration: none !important;
+}
+
+.divider {
+  width: 100%;
+  height: 1px;
+  background-color: var(--border);
+  margin: 8px 0;
+}
+
+.react-toast-notifications__toast{
+  max-width: calc(100vw - 16px)!important;
+  margin-left: auto!important;;
+  margin-right: auto!important;;
+}
+
+h1{
+  font-size: 32px;
+}
+
+h2{
+  font-size: 24px;
+}
+
+@media (max-width: 768px) {
+  body.scrollDisabledMobile {
+    overflow: hidden;
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  h1{
+    font-size: 28px;
   }
-  to {
-    transform: rotate(360deg);
+  h2{
+    font-size: 22px;
   }
 }

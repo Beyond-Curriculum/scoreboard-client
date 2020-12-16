@@ -1,0 +1,68 @@
+.olympiad{
+    display: block;
+    padding: 12px 0;
+    border-bottom: 1px var(--border) solid;
+}
+.olympiadTitle{
+    font-size: 18px;
+    font-weight: 600;
+}
+.olympiadInfo{
+    color: var(--textSecondary);
+    font-size: 14px;
+}
+.olympiadActions{
+    float: right;
+}
+
+.olympiadActions button{
+    appearance: none;
+    border: none;
+    padding: 8px;
+    border-radius: 50%;
+    background-color: transparent;
+    color: var(--textSecondary);
+    transition: background-color .2s ease, color .2s ease;
+    cursor: pointer;
+    outline: none!important;
+}
+
+.olympiadActions button:hover{
+    background-color: var(--border);
+    color: var(--text);
+}
+
+.olympiadActions button svg{
+    display: block;
+}
+
+
+.fab{
+    position: fixed;
+    bottom: 24px;
+    right: 24px;
+    padding: 12px;
+    background-color: var(--primary);
+    color: var(--back);
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    outline: none!important;
+    transition: background-color .2s ease, transform .2s ease;
+}
+
+.fab:hover{
+    background-color: var(--primaryLighter);
+}
+
+.fab:active{
+    transform: scale(.96);
+}
+
+.fab svg{
+    display: block;
+}
+
+.field{
+    margin-bottom: 12px;
+}

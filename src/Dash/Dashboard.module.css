@@ -1,0 +1,13 @@
+.Main {
+    width: calc(100% - 320px);
+    padding: 48px 0;
+    margin-left: 320px;
+}
+
+@media (max-width: 900px){
+    .Main{
+        width: 100%;
+        margin: 0;
+        padding: 96px 0;
+    }
+}

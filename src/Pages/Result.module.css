@@ -1,0 +1,308 @@
+.Result {
+    padding: 48px 0;
+}
+
+.bread{
+    color: var(--textSecondary);
+}
+
+.flag{
+    height: 24px;
+}
+
+.arrow{
+    margin: 0 8px;
+}
+
+.card {
+    margin: 16px 0 12px 0;
+    border: 1px var(--border) solid;
+    border-radius: 7px;
+    padding: 24px 12px 16px;
+}
+
+.yearEvals {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    gap: 48px;
+}
+
+.yearEval {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    position: relative;
+}
+
+.clickable{
+    cursor: pointer;
+}
+
+.yearEvalLabel,
+.fieldLabel {
+    font-size: 10px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: var(--textSecondary);
+}
+
+.yearEvalLabel {
+    margin-top: 12px;
+}
+
+.yearEvalValue {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    line-height: 1;
+    font-weight: 600;
+    height: 64px;
+    width: 64px;
+    border: 4px var(--border) solid;
+    border-radius: 50%;
+}
+
+.link {
+    display: block;
+    width: fit-content;
+    font-size: 11px;
+    margin-top: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: var(--textSecondary)!important;
+}
+
+.link, .request a, .Grade table a, .modalContent a{
+    box-shadow: inset 0 -.07em 0 var(--primary);
+    transition: box-shadow .27s cubic-bezier(.77,0,.175,1), color .27s cubic-bezier(.77,0,.175,1);
+}
+
+.link:hover, .request a:hover, .Grade table a:hover, .modalContent a:hover{
+    box-shadow: inset 0 -.85em 0 var(--primarySemiTransparent);
+    color: var(--text)!important;
+}
+
+.yearEvalNumber {
+    font-weight: bold;
+}
+
+.more {
+    margin-top: 24px;
+    padding-top: 24px;
+    border-top: 1px var(--border) solid;
+}
+
+.more ul {
+    padding: 0;
+    list-style: none;
+    font-size: 14px;
+    margin: 24px 0;
+}
+
+.more ul li::before{
+    content: "- "
+}
+
+.fields:empty + ul{
+    margin-top: 0;
+}
+
+ul:empty{
+    margin: 0;
+}
+
+.field {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 8px 0;
+    width: 50%;
+    padding: 8px;
+}
+
+.fieldValue {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 4px;
+}
+
+.fields {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.field+.field {
+    border-left: 1px var(--border) solid;
+}
+
+.table{
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+.Grade table {
+    width: 100%;
+    font-size: 14px;
+    white-space: nowrap;
+}
+
+.Grade td,
+.Grade th {
+    text-align: left;
+    padding: 8px;
+}
+
+.Grade th{
+    font-size: 10px;
+    text-transform: uppercase;
+    color: var(--textSecondary)
+}
+
+.Grade tr{
+    border-bottom: 1px var(--border) solid;
+}
+
+.Grade tr:global(.gold){
+    background-color: rgba(240, 200, 24, 0.18);
+}
+
+:global(.dark) .Grade tr:global(.gold){
+    background-color: rgb(255, 226, 99, .24);
+}
+
+.Grade tr:global(.silver){
+    background-color: rgba(179, 179, 179, 0.18);
+}
+
+:global(.dark) .Grade tr:global(.silver){
+    background-color: rgba(238, 238, 238, 0.24);
+}
+
+.Grade tr:global(.bronze){
+    background-color: rgba(207, 170, 96, 0.18);
+}
+
+:global(.dark) .Grade tr:global(.bronze){
+    background-color:rgba(238, 182, 69, 0.24);
+}
+
+
+.tab {
+    display: block;
+    padding: 8px 8px 12px ;
+    font-size: 14px;
+    cursor: pointer;
+    color: var(--textSecondary);
+    transition: color .2s ease, border-color .2s ease;
+    border-bottom: 1px transparent solid;
+}
+
+.tab.active {
+    color: var(--text);
+    border-color: var(--primary);
+}
+
+.tabs {
+    position: relative;
+    width: calc(100% + 10px);
+    margin: 10px 0 24px 0;
+    border-bottom: 1px var(--border) solid;
+}
+
+.tabs label{
+    font-size: 10px;
+    font-weight: 600;
+    margin: 0 10px;
+    text-transform: uppercase;
+    color: var(--textSecondary);
+}
+
+.tabs::before,
+.tabs::after {
+    position: absolute;
+    top: 0;
+    content: "";
+    display: block;
+    width: 10px;
+    height: 100%;
+    z-index: 1;
+}
+
+.tabs::before {
+    background-image: linear-gradient(90deg, var(--back), var(--backTransparent));
+    left: 0;
+}
+
+.tabs::after {
+    background-image: linear-gradient(270deg, var(--back), var(--backTransparent));
+    right: 0;
+}
+
+.tabsWrap {
+    display: flex;
+    overflow-x: auto;
+    padding: 0 10px;
+    width: 100%;
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch;
+}
+
+.request{
+    margin-top: 48px;
+    padding-top: 32px;
+    border-top: 1px var(--border) solid;
+}
+
+.request a, .Grade table a{
+    font-weight: 600;
+}
+
+.evalInfo{
+    position: absolute;
+    top: -4px;
+    right: 0;
+    color: var(--textSecondary);
+    cursor: pointer;
+}
+
+.evalInfo svg{
+    display: block;
+}
+
+.titleSkeleton{
+    height: 32px;
+    width: 256px;
+    margin: 8px 0 16px 0;
+    background-color: var(--border);
+    border-radius: 4px;
+}
+
+.points:empty{
+    margin-bottom: 24px;
+}
+
+@media (max-width: 678px) {
+    .yearEvals {
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 24px;
+    }
+    .table, .tabs{
+        margin-left: -24px;
+        margin-right: -24px;
+    }
+    .tabs{
+        width: calc(100% + 48px);
+    }
+}
+
+@media (max-width: 420px) {
+    .bread{
+        font-size: 14px;
+    }
+    .yearEvals {
+        grid-template-columns: 1fr 1fr;
+    }
+}

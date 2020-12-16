@@ -1,0 +1,97 @@
+.bread{
+    color: var(--textSecondary);
+}
+
+.item{
+    padding: 8px 12px;
+    border: 1px var(--border) solid;
+    border-radius: 64px;
+    margin: 8px;
+    transition: background-color .2s ease;
+    display: inline-block;
+}
+
+.items{
+    margin: 12px -8px;
+    min-height: 168px;
+    vertical-align: bottom;
+}
+
+.item span{
+    display: block;
+    width: 96px;
+    height: 18px;
+    margin: 3px 0;
+    background-color: var(--border);
+    border-radius: 4px;
+    animation: blink 2s ease infinite;
+}
+
+.pieceSkeleton{
+    display: inline-block;
+    height: 18px;
+    width: 96px;
+    background-color: var(--border);
+    border-radius: 4px;
+    margin: 1px 0;
+    vertical-align: text-bottom;
+    animation: blink 2s ease infinite;
+}
+
+.item:nth-child(2) span{
+    width: 128px;
+}
+
+.item:nth-child(3) span{
+    width: 160px;
+}
+
+.years .item span{
+    width: 36px!important;
+}
+
+.arrow{
+    margin: 0 8px;
+}
+
+.withIcons .item{
+    display: inline-flex;
+    align-items: center;
+}
+
+.withIcons .item::before{
+    display: block;
+    content: "";
+    height: 24px;
+    width: 24px;
+    margin-right: 8px;
+    background-color: var(--border);
+    animation: blink 2s ease infinite;
+    border-radius: 50%;
+}
+
+@keyframes blink{
+    0%{
+        opacity: .8;
+    }
+    50%{
+        opacity: .2;
+    }
+    100%{
+        opacity: .8;
+    }
+}
+
+@media (max-width: 460px){
+    .bread{
+        font-size: 14px;
+    }
+    .item{
+        font-size: 14px;
+        padding: 6px 10px;
+        margin: 6px;
+    }
+    .items{
+        margin: 24px -6px;
+    }
+}

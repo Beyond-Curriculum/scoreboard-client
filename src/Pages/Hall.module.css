@@ -1,0 +1,72 @@
+.Hall{
+    padding: 48px 0;
+}
+
+.Hall h1{
+    text-align: center;
+}
+
+.students{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 32px;
+    padding-top: 48px;
+}
+
+.student{
+    text-align: center;
+}
+
+.student .avatar{
+    height: 128px;
+    width: 128px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+    margin: auto;
+    background-color: var(--border);
+    margin-bottom: 12px;
+    transition: transform .2s ease, box-shadow .2s ease;
+}
+
+.student .name{
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.student .title{
+    font-size: 14px;
+    color: var(--textSecondary);
+}
+
+.student:hover .avatar{
+    transform: scale(1.05);
+    box-shadow: 0 8px 30px rgba(0,0,0,0.12);
+}
+
+.request{
+    margin-top: 48px;
+    padding-top: 32px;
+    border-top: 1px var(--border) solid;
+}
+
+.request a {
+    text-decoration: underline!important;
+    font-weight: 600;
+}
+
+@media (max-width: 768px){
+    .students{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media (max-width: 508px){
+    .students{
+        grid-template-columns: 1fr 1fr;
+    }
+    .student .avatar{
+        height: 96px;
+        width: 96px;
+    }
+}

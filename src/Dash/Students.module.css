@@ -1,0 +1,230 @@
+.fab{
+    position: fixed;
+    bottom: 24px;
+    right: 24px;
+    padding: 12px;
+    background-color: var(--primary);
+    color: var(--back);
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    outline: none!important;
+    transition: background-color .2s ease, transform .2s ease;
+}
+
+.fab:hover{
+    background-color: var(--primaryLighter);
+}
+
+.fab:active{
+    transform: scale(.96);
+}
+
+.fab svg{
+    display: block;
+}
+
+.avatar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.avatarPhoto{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-position: center;
+    background-size: cover;
+    width: 64px;
+    height: 64px;
+    margin-right: 16px;
+    border-radius: 50%;
+    background-color: var(--border);
+}
+
+.avatarInfo{
+    width: calc(100% - 80px);
+}
+
+.dropzone{
+    border-width: 1px;
+    border-radius: 2px;
+    border-color: var(--border);
+    border-style: dashed;
+    height: 64px;
+    border-radius: 7px;
+    padding: 4px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+}
+
+.dropzone p{
+    margin: 0;
+    font-size: 14px;
+    color: var(--textSecondary)
+}
+
+.avatarLoading{
+    height: 24px;
+    width: 24px;
+    border-radius: 50%;
+    border: 2px var(--back) solid;
+    border-bottom-color: transparent;
+    animation: rotate 1s linear infinite;
+}
+
+@keyframes rotate{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(359deg);
+    }
+}
+
+.file{
+    display: flex;
+    align-items: center;
+}
+
+.file>svg{
+    margin-right: 8px;
+    color: var(--textSecondary)
+}
+
+.file span{
+    width: calc(100% - 72px);
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+
+.PointsInput{
+    display: flex;
+    align-items: center;
+    margin-bottom: 12px;
+}
+
+.PointsInput>div{
+    width: calc(100% - 48px)
+}
+
+.PointsInput button, .file button{
+    appearance: none;
+    border: none;
+    margin-left: 8px;
+    padding: 8px;
+    border-radius: 50%;
+    background-color: transparent;
+    color: var(--textSecondary);
+    transition: background-color .2s ease, color .2s ease;
+    cursor: pointer;
+    outline: none!important;
+}
+
+.PointsInput button:hover, .file button:hover{
+    background-color: var(--border);
+    color: var(--text);
+}
+
+.PointsInput button svg, .file button svg{
+    display: block;
+}
+
+.label {
+    display: block;
+    font-size: 10px;
+    font-weight: 600;
+    margin-bottom: 12px;
+    text-transform: uppercase;
+    color: var(--textSecondary);
+}
+
+.field{
+    margin-bottom: 12px;
+}
+
+.group{
+    padding: 12px;
+    border: 1px var(--border) solid;
+    border-radius: 7px;
+    margin-bottom: 16px;
+}
+
+.group>.label{
+    font-size: 12px;
+}
+
+.group .field:last-of-type{
+    margin: 0;
+}
+
+.User{
+    display: flex;
+    align-items: center;
+    padding: 8px 0;
+    border-bottom: 1px var(--border) solid;
+}
+
+.UserAvatar{
+    height: 48px;
+    width: 48px;
+    background-position: center;
+    background-size: cover;
+    background-color: var(--border);
+    border-radius: 50%;
+    margin-right: 16px;
+}
+
+.UserData{
+    width: calc(100% - 152px);
+}
+
+.UserData>div{
+    white-space: nowrap;
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.UserDataName{
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.UserDataEmail{
+    font-size: 12px;
+    color: var(--textSecondary);
+}
+
+.UserActions{
+    margin-left: 8px;
+}
+
+.UserActions button{
+    appearance: none;
+    border: none;
+    padding: 8px;
+    border-radius: 50%;
+    background-color: transparent;
+    color: var(--textSecondary);
+    transition: background-color .2s ease, color .2s ease;
+    cursor: pointer;
+    outline: none!important;
+}
+
+.UserActions button:hover{
+    background-color: var(--border);
+    color: var(--text);
+}
+
+.UserActions button svg{
+    display: block;
+}
+

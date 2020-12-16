@@ -1,0 +1,220 @@
+.Navbar{
+    padding: 24px 0;
+    box-shadow: 0 -1px 0 0 var(--border) inset;
+    position: fixed;
+    width: 100%;
+    background-color: var(--backSemiTransparent);
+    backdrop-filter: blur(4px) saturate(120%);
+    top: 0;
+    z-index: 99;
+}
+
+.Navbar>div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.brand img{
+    height: 16px;
+    display: block;
+}
+
+:global(.dark) .brand{
+    filter: invert(1);
+}
+
+.links{
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    line-height: 1.2;
+}
+
+.link{
+    padding: 4px 0;
+    transition: box-shadow .2s ease;
+    margin-right: 16px;
+}
+
+.link.active{
+    box-shadow: 0 1px 0 0 var(--text);
+}
+
+.lang{
+    position: relative;
+    display: flex;
+    text-transform: uppercase;
+    align-items: center;
+    font-size: 12px;
+    color: var(--textSecondary);
+    font-weight: bold;
+    cursor: pointer;
+    line-height: 1.2;
+}
+
+.lang span{
+    display: block;
+    margin-right: 4px;
+}
+
+.lang .menu{
+    opacity: 0;
+    border-radius: 7px;
+    pointer-events: none;
+    position: absolute;
+    top: 0;
+    margin-top: 24px;
+    padding: 8px 0;
+    background-color: var(--back);
+    border: 1px var(--border) solid;
+    transform: translateY(12px);
+    transition: transform .2s ease, opacity .2s ease;
+}
+
+.menu::before{
+    content: "";
+    display: block;
+    height: 8px;
+    width: 8px;
+    position: absolute;
+    top: 0;
+    left: calc(50% - 4px);
+    transform: translateY(-5px) rotate(45deg);
+    background-color: var(--back);
+    border-left: 1px var(--border) solid;
+    border-top: 1px var(--border) solid;
+}
+
+.lang.open .menu{
+    opacity: 1;
+    pointer-events: all;
+    transform: none;
+}
+
+.langMenuItem{
+    padding: 4px 10px;
+    font-size: 14px;
+    font-weight: normal;
+}
+
+.langMenuItemSelected{
+    font-weight: bold;   
+    color: var(--text);
+}
+
+.burger{
+    display: none;
+    cursor: pointer;
+}
+
+.burger div {
+    width: 28px;
+    height: 1px;
+    background-color: var(--text);
+    transition: opacity .2s ease-out, transform .2s ease-out;
+}
+
+.burger div:not(:last-of-type) {
+    margin-bottom: 6px;
+}
+
+.menuActive .burger div:first-of-type {
+    transform: translateY(7px) rotate(45deg);
+}
+
+.menuActive .burger div:nth-of-type(2) {
+    opacity: 0;
+    transform: scale(0);
+}
+
+.menuActive .burger div:last-of-type {
+    transform: translateY(-7px) rotate(-45deg);
+}
+
+.langMobile{
+    display: none;
+}
+
+.langMobile .menu{
+    left: -8px;
+    margin-top: 28px;
+}
+
+.langMobile .langMenuItem{
+    font-size: 15px;
+    padding: 6px 14px;
+}
+
+
+@media (max-width: 768px){
+    .langMobile{
+        display: flex;
+    }
+    .Navbar{
+        padding: 16px 0;
+    }
+    .burger{
+        display: block;
+    }
+    .links{
+        opacity: 0;
+        top: 50px;
+        left: 0;
+        width: 100%;
+        background-color: var(--backSemiTransparent);
+        backdrop-filter: blur(4px) saturate(120%);
+        pointer-events: none;
+        position: fixed;
+        text-align: center;
+        flex-direction: column;
+        transition: opacity .2s ease, transform .2s ease;
+        padding: 8px 24px;
+        transform: translateY(-100%);
+        z-index: -1;
+        box-shadow: 0 -1px 0 0 var(--border) inset;
+    }
+    .links .lang{
+        display: none;
+    }
+    .menuActive .links{
+        opacity: 1;
+        pointer-events: all;
+        transform: none;
+    }
+    .links .link{
+        display: block;
+        margin: 0;
+        width: 100%;
+        padding: 12px 0;
+    }
+    .links .link:not(:last-of-type){
+        border-bottom: 1px var(--border) solid;
+    }
+    .link.active{
+        box-shadow: none;
+        font-weight: bold;
+    }
+    /*
+    .lang .menu{
+        position: unset;
+        opacity: 1;
+        transform: none;
+        display: flex;
+        padding: unset;
+        border: none;
+        margin: 0;
+        pointer-events: all;
+        background-color: transparent;
+    }
+    .lang .menu::before{
+        display: none;
+    }
+    .lang>span, .lang>svg{
+        display: none;
+    }
+    .langMenuItem{
+        padding: 12px 8px;
+    }
+    */
+}

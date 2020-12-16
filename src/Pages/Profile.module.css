@@ -1,0 +1,121 @@
+.Profile{
+    padding: 48px 0;
+}
+
+.avatar{
+    height: 128px;
+    width: 128px;
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 24px;
+    background-color: var(--border);
+}
+
+.Profile h2{
+    font-size: 24px;
+    margin-bottom: 8px;
+    line-height: 1.2;
+}
+
+.Profile p{
+    color: var(--textSecondary);
+    font-size: 14px;
+    max-width: 600px;
+    margin: 8px 0;
+}
+
+.fields{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 32px;
+}
+
+.field{
+    padding: 12px 0;
+    border-bottom: 1px var(--border) solid;
+}
+
+.fieldLabel{
+    font-size: 10px;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: var(--textSecondary);
+    margin-bottom: 4px;
+}
+
+.fieldValue{
+    font-size: 14px;
+}
+
+.fieldValue ul{
+    padding: 0;
+    list-style: none;
+    margin: 0;
+}
+
+.fieldValue ul li::before{
+    content: "- "
+}
+
+.table{
+    overflow-x: auto;
+    padding-bottom: 24px;
+    -webkit-overflow-scrolling: touch;
+}
+
+.Profile table {
+    width: 100%;
+    font-size: 14px;
+    white-space: nowrap;
+}
+
+.Profile td,
+.Profile th {
+    text-align: left;
+    padding: 8px;
+}
+
+.Profile th{
+    font-size: 10px;
+    text-transform: uppercase;
+    color: var(--textSecondary)
+}
+
+.Profile tr{
+    border-bottom: 1px var(--border) solid;
+}
+
+.Profile tr:global(.gold){
+    background-color: rgba(240, 200, 24, 0.18);
+}
+
+.Profile tr:global(.silver){
+    background-color: rgba(179, 179, 179, 0.18);
+}
+
+.Profile tr:global(.bronze){
+    background-color: rgba(207, 170, 96, 0.18);
+}
+
+.table a{
+    font-weight: bold;
+    box-shadow: inset 0 -.07em 0 var(--primary);
+    transition: box-shadow .27s cubic-bezier(.77,0,.175,1), color .27s cubic-bezier(.77,0,.175,1);
+}
+
+.table a:hover{
+    box-shadow: inset 0 -.85em 0 var(--primarySemiTransparent);
+    color: var(--text)!important;
+}
+
+
+@media (max-width: 640px) {
+    .table{
+        margin: 0 -24px;
+    }
+    .fields{
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+}

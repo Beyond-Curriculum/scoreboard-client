@@ -1,0 +1,323 @@
+.paragraph{
+    color: var(--textSecondary)
+}
+
+.flag{
+    height: 24px;
+}
+
+.yearEvals{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    gap: 48px;
+    padding-bottom: 24px;
+    margin-bottom: 24px;
+    border-bottom: 1px var(--border) solid;
+}
+
+.yearEval{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.yearEvalLabel{
+    font-size: 10px;
+    font-weight: 600;
+    margin-top: 12px;
+    text-transform: uppercase;
+    color: var(--textSecondary);
+}
+
+.yearEvalValue{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    line-height: 1;
+    font-weight: 600;
+    height: 48px;
+    width: 48px;
+    border: 3px transparent solid;
+    border-radius: 50%;
+}
+
+
+.numberSwitch {
+    display: flex;
+    border-radius: 7px;
+    overflow: hidden;
+}
+
+.numberSwitchValue {
+    width: 70%;
+    padding: 8px;
+    text-align: center;
+    border-top: 1px var(--border) solid;
+    border-bottom: 1px var(--border) solid;
+}
+
+.numberSwitch button {
+    appearance: none;
+    border: none;
+    font-size: 16px;
+    width: 15%;
+    padding: 8px;
+    font-weight: bold;
+    text-align: center;
+    background-color: var(--primary);
+    color: var(--back);
+    cursor: pointer;
+}
+
+.numberSwitch button:hover {
+    background-color: var(--primaryLighter);
+}
+
+.numberSwitch button:focus {
+    box-shadow: 0 4px 8px 0 var(--primaryTransparent);
+    outline: none !important;
+}
+
+.numberSwitch button:active {
+    transform: scale(0.98);
+}
+
+.numberSwitch button:disabled {
+    cursor: not-allowed;
+    background-color: var(--border) !important;
+    color: var(--textSecondary) !important;
+    border-color: var(--border) !important;
+}
+
+.field {
+    margin-bottom: 12px;
+}
+
+.field label {
+    font-size: 10px;
+    font-weight: 600;
+    margin-bottom: 12px;
+    text-transform: uppercase;
+    color: var(--textSecondary);
+}
+
+.tab {
+    display: block;
+    padding: 8px 8px 12px ;
+    font-size: 14px;
+    cursor: pointer;
+    color: var(--textSecondary);
+    transition: color .2s ease, border-color .2s ease;
+    border-bottom: 1px transparent solid;
+}
+
+.tab.active {
+    color: var(--text);
+    border-color: var(--primary);
+}
+
+.tabs {
+    position: relative;
+    width: calc(100% + 10px);
+    margin: 10px 0 0 -10px;
+    border-bottom: 1px var(--border) solid;
+}
+
+.tabs label{
+    font-size: 10px;
+    font-weight: 600;
+    margin: 0 10px;
+    text-transform: uppercase;
+    color: var(--textSecondary);
+}
+
+.tabs::before,
+.tabs::after {
+    position: absolute;
+    top: 0;
+    content: "";
+    display: block;
+    width: 10px;
+    height: 100%;
+    z-index: 1;
+}
+
+.tabs::before {
+    background-image: linear-gradient(90deg, var(--back), var(--backTransparent));
+    left: 0;
+}
+
+.tabs::after {
+    background-image: linear-gradient(270deg, var(--back), var(--backTransparent));
+    right: 0;
+}
+
+.tabsWrap {
+    display: flex;
+    overflow-x: auto;
+    padding: 0 10px;
+    width: 100%;
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch;
+}
+
+.fab {
+    position: fixed;
+    bottom: 24px;
+    right: 24px;
+    z-index: 10;
+    padding: 12px;
+    background-color: var(--primary);
+    color: var(--back);
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    outline: none !important;
+    transition: background-color .2s ease, transform .2s ease;
+}
+
+.fab:hover {
+    background-color: var(--primaryLighter);
+}
+
+.fab:active {
+    transform: scale(.96);
+}
+
+.fab svg {
+    display: block;
+}
+
+.Grade table {
+    width: 100%;
+    margin: 24px 0;
+    font-size: 14px;
+    white-space: nowrap;
+}
+
+.Grade td,
+.Grade th {
+    text-align: left;
+    padding: 8px;
+}
+
+.Grade th{
+    font-size: 10px;
+    text-transform: uppercase;
+    color: var(--textSecondary)
+}
+
+.Grade tr{
+    border-bottom: 1px var(--border) solid;
+}
+
+.Grade table a{
+    text-decoration: underline!important;
+}
+
+.participantActions button{
+    appearance: none;
+    border: none;
+    padding: 8px;
+    border-radius: 50%;
+    background-color: transparent;
+    color: var(--textSecondary);
+    transition: background-color .2s ease, color .2s ease;
+    cursor: pointer;
+    outline: none!important;
+}
+
+.participantActions button:hover{
+    background-color: var(--border);
+    color: var(--text);
+}
+
+.participantActions button svg{
+    display: block;
+}
+
+.table{
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+
+.dropzone{
+    border-width: 1px;
+    border-radius: 2px;
+    border-color: var(--border);
+    border-style: dashed;
+    height: 64px;
+    border-radius: 7px;
+    padding: 4px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+}
+
+.dropzone p{
+    margin: 0;
+    font-size: 14px;
+    color: var(--textSecondary)
+}
+
+.file{
+    display: flex;
+    align-items: center;
+}
+
+.file>svg{
+    margin-right: 8px;
+    color: var(--textSecondary)
+}
+
+.file span{
+    width: calc(100% - 72px);
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.file button{
+    appearance: none;
+    border: none;
+    margin-left: 8px;
+    padding: 8px;
+    border-radius: 50%;
+    background-color: transparent;
+    color: var(--textSecondary);
+    transition: background-color .2s ease, color .2s ease;
+    cursor: pointer;
+    outline: none!important;
+}
+
+.file button:hover{
+    background-color: var(--border);
+    color: var(--text);
+}
+
+.file button svg{
+    display: block;
+}
+
+@media (max-width: 640px){
+    .yearEvals{
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 24px;
+    }
+    .table{
+        margin: 0 -24px;
+    }
+    
+}
+
+@media (max-width: 380px){
+    .yearEvals{
+        grid-template-columns: 1fr 1fr;
+    }
+}

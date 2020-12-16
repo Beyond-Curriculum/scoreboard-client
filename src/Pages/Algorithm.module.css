@@ -1,0 +1,22 @@
+.Algorithm{
+    padding: 48px 0;
+}
+
+.section{
+    padding: 24px 0;
+}
+
+.section:not(:last-of-type){
+    border-bottom: 1px var(--border) solid;
+}
+
+.Algorithm a{
+    font-weight: bold;
+    box-shadow: inset 0 -.07em 0 var(--primary);
+    transition: box-shadow .27s cubic-bezier(.77,0,.175,1), color .27s cubic-bezier(.77,0,.175,1);
+}
+
+.Algorithm a:hover{
+    box-shadow: inset 0 -.85em 0 var(--primarySemiTransparent);
+    color: var(--text)!important;
+}

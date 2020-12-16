@@ -1,0 +1,49 @@
+.hero{
+    background-image: url("../Assets/kz.png");
+    background-position-x: 400px;
+    background-position-y: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+:global(.dark) .hero{
+    background-image: url("../Assets/kzDark.png");
+}
+
+.hero > div{
+    min-height: calc(100vh - 72px);
+    display: flex;
+    align-items: center;
+}
+
+.text{
+    max-width: 480px;
+    padding: 32px 0;
+}
+
+.text p{
+    color: var(--textSecondary);
+    font-size: 18px;
+    text-shadow: 0 2px 3px var(--back);
+}
+
+@media (min-width: 1439px){
+    .hero {
+        background-size: 75%;
+        background-position-x: right;
+    }
+}
+
+@media (max-width: 1064px){
+    .hero {
+        background-size: 1024px;
+        background-position-x: 320px;
+    }
+}
+
+@media (max-width: 768px){
+    .hero {
+        background-size: 768px;
+        background-position-x: 120px;
+    }
+}

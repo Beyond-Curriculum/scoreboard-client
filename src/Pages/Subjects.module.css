@@ -1,0 +1,63 @@
+.Page{
+    padding: 48px 0;
+}
+
+.bread{
+    color: var(--textSecondary);
+}
+
+.desc{
+    margin-top: 16px;
+    font-size: 15px;
+    color: var(--textSecondary);
+}
+
+.item{
+    padding: 8px 12px;
+    border: 1px var(--border) solid;
+    border-radius: 64px;
+    margin: 8px;
+    transition: background-color .2s ease;
+    display: inline-block;
+    vertical-align: bottom;
+}
+
+.withIcon{
+    display: inline-flex;
+    align-items: center;
+}
+
+.icon svg{
+    display: block;
+    height: 24px;
+    width: 24px;
+    margin-right: 8px;
+}
+
+.item:hover{
+    background-color: var(--border);
+}
+
+.items{
+    margin: 12px -8px;
+    min-height: 168px;
+}
+
+.arrow{
+    margin: 0 8px;
+}
+
+@media (max-width: 460px){
+    .bread{
+        font-size: 14px;
+    }
+    .item{
+        
+        font-size: 14px;
+        padding: 6px 10px;
+        margin: 6px;
+    }
+    .items{
+        margin: 24px -6px;
+    }
+}

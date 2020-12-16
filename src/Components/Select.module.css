@@ -1,0 +1,38 @@
+.Select {
+    display: flex;
+    flex-direction: column;
+}
+
+.Select>* {
+    display: block;
+}
+
+.Select label {
+    font-size: 10px;
+    font-weight: 600;
+    margin-bottom: 6px;
+    text-transform: uppercase;
+    color: var(--textSecondary);
+}
+
+.Select select {
+    appearance: none;
+    font-size: 16px;
+    padding: 8px 32px 8px 14px;
+    border: 1px var(--border) solid;
+    background-color: var(--back);
+    color: var(--text);
+    border-radius: 5px;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%23222222' stroke-width='1' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M6 9l6 6 6-6'/%3E%3C/svg%3E");
+    background-position: calc(100% - 12px) center;
+    background-repeat: no-repeat;
+}
+
+:global(.dark) .Select select{
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%23ffffff' stroke-width='1' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M6 9l6 6 6-6'/%3E%3C/svg%3E");
+}
+
+.Select select:focus {
+    border-color: var(--primary);
+    outline: none;
+  }
