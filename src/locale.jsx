@@ -17,7 +17,8 @@ export default {
             subject: "Выберите предмет",
             olymp: "Выберите олимпиаду",
             year: "Выберите год",
-            algorithm: "Алгоритм подсчета"
+            algorithm: "Алгоритм подсчета",
+            about: "Определение состава сборной РК"
         },
         home: {
             title: "О проекте",
@@ -123,7 +124,8 @@ export default {
             subject: "Choose discipline",
             olymp: "Choose Olympiad",
             year: "Choose year",
-            algorithm: "Calculation algorithm"
+            algorithm: "Calculation algorithm",
+            about: "Selection of national team from Kazakhstan"
         },
         home: {
             title: "About the project",
@@ -224,7 +226,8 @@ export default {
             subject: "Пәнді тандаңыз",
             olymp: "Олимпиаданы тандаңыз",
             year: "Жылды тандаңыз",
-            algorithm: "Есептеу алгоритмі"
+            algorithm: "Есептеу алгоритмі",
+            about: "ҚР құрама командасын анықтау"
         },
         home: {
             title: "Жоба туралы",

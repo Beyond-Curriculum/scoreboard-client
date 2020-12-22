@@ -59,7 +59,12 @@ const Olympiads = ({ lang, match }) => {
                         </>
                     ) : <Empty />
                 )}
-                {subject.data ? <p className={classes.desc}>{subject.data[getLocal("text", lang)]}</p> : null}
+                {subject.data && subject.data[getLocal("text", lang)] ? (
+                    <div>
+                        <h2>{l.results.about}</h2>
+                        <p className={classes.desc} dangerouslySetInnerHTML={{ __html: subject.data[getLocal("text", lang)] }} />
+                    </div>
+                ) : null}
             </div>
         </div>
     )
