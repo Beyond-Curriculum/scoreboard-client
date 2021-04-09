@@ -1,1 +1,1 @@
-export const server = "https://api.scoreboard.kz/"//"http://localhost:3010/";
+export const server = "https://sc-api.bc-pf.org/"//"http://localhost:3010/";
