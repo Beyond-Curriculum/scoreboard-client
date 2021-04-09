@@ -2,10 +2,17 @@ import React from 'react';
 import { connect } from 'react-redux';
 import classes from './Algorithm.module.css'
 import locale from "../locale"
+import { useMatomo } from '@datapunt/matomo-tracker-react'
 
 const evals = ["transparency", "uniqueness", "screening", "award"]
 
 const Algorithm = ({ lang }) => {
+    const { trackPageView } = useMatomo()
+
+    // Track page view
+    React.useEffect(() => {
+        trackPageView()
+    }, [])
     const l = locale[lang]
     return (
         <div className={classes.Algorithm}>

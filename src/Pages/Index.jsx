@@ -12,8 +12,16 @@ import What from './What';
 import Footer from '../Components/Footer';
 import Algorithm from './Algorithm';
 import NotFound from './NotFound';
+import { useMatomo } from '@datapunt/matomo-tracker-react'
 
 const Index = () => {
+    const { trackPageView } = useMatomo()
+
+    // Track page view
+    React.useEffect(() => {
+        trackPageView()
+    }, [])
+
     return (
         <div style={{
             paddingTop: 72

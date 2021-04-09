@@ -7,8 +7,15 @@ import locale from "../locale"
 import Empty from '../Components/Empty';
 import { Link } from 'react-router-dom';
 import Skeleton from '../Components/Skeleton';
+import { useMatomo } from '@datapunt/matomo-tracker-react'
 
 const Years = ({ lang, match, history }) => {
+    const { trackPageView } = useMatomo()
+
+    // Track page view
+    React.useEffect(() => {
+        trackPageView()
+    }, [])
     const { path } = match.params;
     const [olympiad, setOlympiad] = useState({
         isFetching: true,

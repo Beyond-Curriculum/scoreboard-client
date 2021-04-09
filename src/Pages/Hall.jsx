@@ -8,8 +8,15 @@ import Loader from '../Components/Loader';
 import Empty from '../Components/Empty';
 import { Link } from 'react-router-dom';
 import { getLocal } from '../utils';
+import { useMatomo } from '@datapunt/matomo-tracker-react'
 
 const Hall = ({ lang }) => {
+    const { trackPageView } = useMatomo()
+
+    // Track page view
+    React.useEffect(() => {
+        trackPageView()
+    }, [])
     const l = locale[lang];
     const [students, setStudents] = useState({
         isFetching: true,

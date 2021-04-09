@@ -8,8 +8,15 @@ import Empty from '../Components/Empty';
 import { Link } from 'react-router-dom';
 import Skeleton from '../Components/Skeleton';
 import { getLocal } from "../utils"
+import { useMatomo } from '@datapunt/matomo-tracker-react'
 
 const Olympiads = ({ lang, match }) => {
+    const { trackPageView } = useMatomo()
+
+    // Track page view
+    React.useEffect(() => {
+        trackPageView()
+    }, [])
     const { path } = match.params;
     const [subject, setSubject] = useState({
         isFetching: true,

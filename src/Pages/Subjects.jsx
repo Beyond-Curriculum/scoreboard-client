@@ -8,8 +8,15 @@ import Empty from '../Components/Empty';
 import { Link } from 'react-router-dom';
 import Skeleton from '../Components/Skeleton';
 import clsx from 'clsx';
+import { useMatomo } from '@datapunt/matomo-tracker-react'
 
 const Subjects = ({ lang }) => {
+    const { trackPageView } = useMatomo()
+
+    // Track page view
+    React.useEffect(() => {
+        trackPageView()
+    }, [])
     const [subjects, setSubjects] = useState({
         isFetching: true,
         items: []

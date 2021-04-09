@@ -18,6 +18,7 @@ import clsx from 'clsx';
 import Modal from '../Components/Modal';
 import Skeleton from '../Components/Skeleton';
 import { countries } from 'country-flag-icons'
+import { useMatomo } from '@datapunt/matomo-tracker-react'
 
 const roundSum = (el) => Math.round(el * 100) / 100
 
@@ -47,6 +48,12 @@ const reputationMap = {
 }
 
 const Result = ({ match, lang, history }) => {
+    const { trackPageView } = useMatomo()
+
+    // Track page view
+    React.useEffect(() => {
+        trackPageView()
+    }, [])
     const l = locale[lang];
     const [grade, setGrade] = useState(0)
     const [year, setYear] = useState({

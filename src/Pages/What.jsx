@@ -2,8 +2,15 @@ import React from 'react';
 import { connect } from 'react-redux';
 import classes from './What.module.css'
 import locale from "../locale"
+import { useMatomo } from '@datapunt/matomo-tracker-react'
 
 const What = ({ lang }) => {
+    const { trackPageView } = useMatomo()
+
+    // Track page view
+    React.useEffect(() => {
+        trackPageView()
+    }, [])
     const l = locale[lang]
     return (
         <div className={classes.What}>

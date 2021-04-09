@@ -9,8 +9,15 @@ import Empty from '../Components/Empty';
 import { Link } from 'react-router-dom';
 import { getLocal } from '../utils';
 import clsx from 'clsx';
+import { useMatomo } from '@datapunt/matomo-tracker-react'
 
 const Profile = ({ lang, match, history }) => {
+    const { trackPageView } = useMatomo()
+
+    // Track page view
+    React.useEffect(() => {
+        trackPageView()
+    }, [])
     const l = locale[lang];
     const [student, setStudent] = useState({
         isFetching: true,
