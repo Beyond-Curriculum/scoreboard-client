@@ -274,6 +274,7 @@ const NewYear = ({ olympiad, token, onDone, editYear }) => {
         pointsEn: [],
         pointsRu: [],
         pointsKk: [],
+        problemsUrl: "",
         open: true
     })
     useEffect(() => {
@@ -312,6 +313,7 @@ const NewYear = ({ olympiad, token, onDone, editYear }) => {
                 pointsEn: [],
                 pointsRu: [],
                 pointsKk: [],
+                problemsUrl: "",
             })
         }
     }, [editYear])
@@ -368,6 +370,7 @@ const NewYear = ({ olympiad, token, onDone, editYear }) => {
                     pointsEn: [],
                     pointsRu: [],
                     pointsKk: [],
+                    problemsUrl: "",
                 })
                 onDone();
             } else if (res.data && res.data.message) {
@@ -471,6 +474,9 @@ const NewYear = ({ olympiad, token, onDone, editYear }) => {
             </div>
             <div className={classes.field}>
                 <Input value={year.countries} placeholder="10" label="Countries" name="countries" onChange={handleChange("countries")} />
+            </div>
+            <div className={classes.field}>
+                <Input type="url" label="Link to problems" value={year.problemsUrl} onChange={handleChange("problemsUrl")} />
             </div>
             <div className={classes.field}>
                 <Checkbox label="Visible" value={year.open} onChange={handleChangeValue("open")} />
