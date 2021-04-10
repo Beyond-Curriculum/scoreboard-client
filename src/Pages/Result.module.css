@@ -64,8 +64,15 @@
     border-radius: 50%;
 }
 
+.linkWrapper {
+    display: flex;
+}
+
+.link:nth-child(odd) {
+    margin-right: 12px;
+}
+
 .link {
-    display: block;
     width: fit-content;
     font-size: 11px;
     margin-top: 12px;

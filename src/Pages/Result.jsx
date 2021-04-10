@@ -167,7 +167,10 @@ const Result = ({ match, lang, history }) => {
                                         </div>
                                     </div>
                                 </div>
-                                <Link className={classes.link} to="/algorithm">{l.algorithm.title}</Link>
+                                <div className={classes.linkWrapper}>
+                                    <Link className={classes.link} to="/algorithm">{l.algorithm.title}</Link>
+                                    {year.data['problemsUrl'] ? <a className={classes.link} href={year.data['problemsUrl']}>{l.results.problems}</a> : null }
+                                </div>
                                 <div className={classes.more}>
                                     <div className={classes.fields}>
                                         {year.data.participants ? <div className={classes.field}>

@@ -18,6 +18,7 @@ export default {
             olymp: "Выберите олимпиаду",
             year: "Выберите год",
             algorithm: "Алгоритм подсчета",
+            problems: "Посмотреть задания олимпиды",
             about: "Определение состава сборной РК"
         },
         home: {
@@ -125,6 +126,7 @@ export default {
             olymp: "Choose Olympiad",
             year: "Choose year",
             algorithm: "Calculation algorithm",
+            problems: "Go to olympiad problems",
             about: "Selection of national team from Kazakhstan"
         },
         home: {
@@ -227,6 +229,7 @@ export default {
             olymp: "Олимпиаданы тандаңыз",
             year: "Жылды тандаңыз",
             algorithm: "Есептеу алгоритмі",
+            problems: "Олимпиаданың тапсырмаларын қарау",
             about: "ҚР құрама командасын анықтау"
         },
         home: {
