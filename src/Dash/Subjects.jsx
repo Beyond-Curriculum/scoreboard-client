@@ -24,6 +24,9 @@ const Subjects = ({ token, user }) => {
         path: "",
         text: "",
         icon: "",
+        textRu: "",
+        textEn: "",
+        textKk: ""
     })
     const [editSubject, setEditSubject] = useState({
         en: "",
@@ -32,7 +35,10 @@ const Subjects = ({ token, user }) => {
         path: "",
         text: "",
         icon: "",
-        id: ""
+        id: "",
+        textRu: "",
+        textEn: "",
+        textKk: ""
     })
     const [subjects, setSubjects] = useState({
         isFetching: true,
@@ -71,7 +77,10 @@ const Subjects = ({ token, user }) => {
                     kk: "",
                     text: "",
                     path: "",
-                    icon: ""
+                    icon: "",
+                    textRu: "",
+                    textEn: "",
+                    textKk: ""
                 })
                 setNewModal(false);
                 getSubjects()
@@ -105,7 +114,10 @@ const Subjects = ({ token, user }) => {
                     kk: "",
                     text: "",
                     path: "",
-                    id: ""
+                    id: "",
+                    textRu: "",
+                    textEn: "",
+                    textKk: ""
                 })
                 setEditModal(false);
                 getSubjects()
