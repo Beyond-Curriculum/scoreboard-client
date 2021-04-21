@@ -76,7 +76,7 @@ const Profile = ({ lang, match, history }) => {
                                                     <td>{i + 1}</td>
                                                     {el.grade && el.grade.year ? <td><Link to={`/results/${el.grade.year.olympiad.subject.path}/${el.grade.year.olympiad.path}/${el.grade.year.year}`}>{el.grade.year.olympiad[lang]} {el.grade.year.year}</Link></td> : null}
                                                     <td>{el.grade.year.multiple ? el.grade.grade : "-"}</td>
-                                                    <td>{el.sum}</td>
+                                                    <td>{el.sum ? el.sum.toFixed(2) : el.sum}</td>
                                                     <td>{l.medals[el.medal]}</td>
                                                 </tr>
                                             ))}
