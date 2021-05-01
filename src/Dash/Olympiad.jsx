@@ -138,7 +138,8 @@ const Olympiad = ({ token, match, user }) => {
                     <>
                         <p className={classes.paragraph}>Russian: {olympiad.data.ru} | Kazakh: {olympiad.data.kk}</p>
                         <div className={classes.years}>
-                            {olympiad.years.length ? (olympiad.years.map((el) => (
+                            {console.log(olympiad.years)}
+                            {olympiad.years.length ? (olympiad.years.sort(function(a, b){return b.year - a.year}).map((el) => (
                                 <Year visible={visible} token={token} update={getOlympiad} edit={setEdit} key={el._id} year={el} />
                             ))) : <Empty />}
                         </div>
