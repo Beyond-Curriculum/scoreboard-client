@@ -177,7 +177,7 @@ ul:empty{
 }
 
 :global(.dark) .Grade tr:global(.gold){
-    background-color: rgb(255, 226, 99, .24);
+    background-color: rgb(255, 226, 99, .74);
 }
 
 .Grade tr:global(.silver){
@@ -185,7 +185,7 @@ ul:empty{
 }
 
 :global(.dark) .Grade tr:global(.silver){
-    background-color: rgba(238, 238, 238, 0.24);
+    background-color: rgba(238, 238, 238, 0.74);
 }
 
 .Grade tr:global(.bronze){
@@ -193,7 +193,7 @@ ul:empty{
 }
 
 :global(.dark) .Grade tr:global(.bronze){
-    background-color:rgba(238, 182, 69, 0.24);
+    background-color:rgba(238, 182, 69, 0.74);
 }
 
 
