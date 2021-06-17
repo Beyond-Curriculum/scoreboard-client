@@ -6,7 +6,7 @@ export default {
         support: "Поддержать этот проект",
         oops: {
             title: "Ваше имя написано с ошибкой?",
-            p: <>Пожалуйста, напишите нам на <a href="mailto:scoreboard@bcedu.kz">scoreboard@bcedu.kz</a>, прикладывая ссылку на результат олимпиады, где есть ошибка.</>
+            p: <>Пожалуйста, напишите нам на <a href="mailto:scoreboard@bc-pf.org">scoreboard@bc-pf.org</a>, прикладывая ссылку на результат олимпиады, где есть ошибка.</>
         },
         nav: {
             results: "Результаты",
@@ -39,18 +39,18 @@ export default {
             ],
             p2: <>Очень часто первые 5 олимпиад называют республиканскими, но с поправкой, что это областной этап или заключительный этап. Школьные олимпиады этого цикла (их еще называют Дарыновскими, поскольку их проводит <a target="_blank" rel="noopener noreferrer" href="http://daryn.kz/">РНПЦ Дарын</a>) начинаются в конце октября-ноябре. Вы попадаете на каждый последующий этап если успешно проходите через предыдущий. В конце концов, отбирается от 4 до 6 человек в Сборную Республики Казахстан, которая едет на Международную олимпиаду в июле. Международные олимпиады из серии International Science Olympiads это: IMO, IPhO, IOI, IChO, IBO и IESO. Это своего рода "олимпийские игры" - вершина олимпиадного пика. За победу на таких олимпиадах некоторые вузы автоматически дают гранты, а в некоторых серьезно увеличивается шанс поступления.</>,
             t2: "А как стать олимпиадником",
-            p3: <>Предлагаем почитать нашу <a target="_blank" rel="noopener noreferrer" href="https://blog.beyondcurriculum.kz/getting-started-with-olympiads/">запись в блоге</a>.</>
+            p3: <>Предлагаем почитать нашу <a target="_blank" rel="noopener noreferrer" href="https://blog.bc-pf.org/getting-started-with-olympiads/">запись в блоге</a>.</>
         },
         rating: {
             reputation: {
                 title: "Репутация",
-                p: ["К нашему огромному сожалению, в Казахстане отсутствует институт академической честности. Иногда мы сталкиваемся со случаями, когда ученики получают (или даже покупают) задания до начала олимпиады, а иногда мы наблюдаем предвзятых членов жюри, которые нацелено натаскивают своих учеников на темы, которые позднее встретятся на олимпиаде. К еще большему сожалению, такие случаи почти всегда остаются безнаказанными: свидетелями таких событий являются ученики, судьба которых зависит от этих самых людей. ", "Именно поэтому, мы добавляем третью категорию: репутация. Если наша команда никогда не сталкивалась с нарушениями академической честности на той или иной олимпиаде — у олимпиады нейтральный рейтинг. Если мы сталкивались с одним, маленьким, спорным моментом, которого достаточно чтобы у нас возникали вопросы — мы ставим знак \"вопроса\". Если мы сталкивались с одним серьезным случаем нарушения академической честности — в этой категории ставится один восклицательный знак. В случае систематических нарушений, мы ставим от двух до трех восклицательных знаков.", "В крайне редких случаях, когда мы уверены, что организаторы имеют активную позицию в защиту академической честности, мы ставим галочку — положительная репутация. На таких олимпиадах организаторы не боятся брать ответственность и дисквалифицировать участников, которые подозреваются в нарушении академической честности.", "Примечание: оценка в этой категории является исключительно субъективным мнением команды Фонда. Если вы не считаете нас достаточно компетентными для выдачи такого рейтинга, вы можете оперировать только первыми двумя категориями."]
+                p: ["К нашему огромному сожалению, в Казахстане отсутствует институт академической честности. Иногда мы сталкиваемся со случаями, когда ученики получают (или даже покупают) задания до начала олимпиады, а иногда мы наблюдаем предвзятых членов жюри, которые нацелено натаскивают своих учеников на темы, которые позднее встретятся на олимпиаде. К еще большему сожалению, такие случаи почти всегда остаются безнаказанными: свидетелями таких событий являются ученики, судьба которых зависит от этих самых людей. ", "Именно поэтому, мы добавляем пятую категорию: репутация. Если наша команда никогда не сталкивалась с нарушениями академической честности на той или иной олимпиаде — у олимпиады нейтральный рейтинг. Если мы сталкивались с одним, маленьким, спорным моментом, которого достаточно чтобы у нас возникали вопросы — мы ставим знак \"вопроса\". Если мы сталкивались с одним серьезным случаем нарушения академической честности — в этой категории ставится один восклицательный знак. В случае систематических нарушений, мы ставим от двух до трех восклицательных знаков.", "В крайне редких случаях, когда мы уверены, что организаторы имеют активную позицию в защиту академической честности, мы ставим галочку — положительная репутация. На таких олимпиадах организаторы не боятся брать ответственность и дисквалифицировать участников, которые подозреваются в нарушении академической честности.", "Примечание: оценка в этой категории является исключительно субъективным мнением команды Фонда. Если вы не считаете нас достаточно компетентными для выдачи такого рейтинга, вы можете оперировать только первыми четырьмя оценками."]
             },
             participants: "участники",
             countries: "страны",
             page: {
                 t1: "Рейтинг олимпиад",
-                p1: <>В наши дни проводится огромное количество олимпиад, и человеку, не знакомому с движением, крайне трудно понять насколько ценна та или иная медаль на определенной олимпиаде. Для решения этой задачи, <a target="_blank" rel="noopener noreferrer" href="https://beyondcurriculum.kz/members">экспертный совет Фонда</a> оценивает каждую олимпиаду по пяти категориям:"</>,
+                p1: <>В наши дни проводится огромное количество олимпиад, и человеку, не знакомому с движением, крайне трудно понять насколько ценна та или иная медаль на определенной олимпиаде. Для решения этой задачи, <a target="_blank" rel="noopener noreferrer" href="https://bc-pf.org/members">экспертный совет Фонда</a> оценивает каждую олимпиаду по пяти категориям:"</>,
                 list: [
                     "Прозрачность оценивания (до 5 баллов)",
                     "Уникальность заданий (до 5 баллов)",
@@ -104,7 +104,7 @@ export default {
                 <>
                     1. Подготовьте дипломы с олимпиад
                     <br />
-                    2. Напишите на почту <a href="mailto:scoreboard@bcedu.kz">scoreboard@bcedu.kz</a> отправив свое ФИ, сканы дипломов, школу и ссылки на результаты олимпиад, в которых вы участвовали.
+                    2. Напишите на почту <a href="mailto:scoreboard@bc-pf.org">scoreboard@bc-pf.org</a> отправив свое ФИ, сканы дипломов, школу и ссылки на результаты олимпиад, в которых вы участвовали.
                 </>
             )
         }
@@ -114,7 +114,7 @@ export default {
         support: "Support this project",
         oops: {
             title: "Did we write your name wrong?",
-            p: <>Please feel free to reach us at <a href="mailto:scoreboard@bcedu.kz">scoreboard@bcedu.kz</a>, leaving a link to an olympiad where we made a mistake.</>
+            p: <>Please feel free to reach us at <a href="mailto:scoreboard@bc-pf.org">scoreboard@bc-pf.org</a>, leaving a link to an olympiad where we made a mistake.</>
         },
         nav: {
             results: "Results",
@@ -147,7 +147,7 @@ export default {
             ],
             p2: <>Fairly often, the first 5 Olympiads are simply referred to as "Republic" Olympiads, with correction suggesting its regional level or final stage. School Olympiads of this cycle (often called Daryn Olympiads due to being held by <a target="_blank" rel="noopener noreferrer" href="http://daryn.kz/">RNPC Daryn</a>) begin in 2nd Quarter of the school year. Basically, you qualify for each following stage upon successful completion of the previous one. After the Republic level, 4-6 school kids are selected to represent Kazakhstan at the ISO. Among those are IMO, IPhO, IOI, IChO, IBO, IGeo, IESO, etc. They are somewhat similar to Olympic games in a sense that they represent the pinnacle of an olympian career. Some Universities automatically grant scholarships to the holders of gold medals in ISOs, while others significantly increase your chances for enrollment.</>,
             t2: "How do I become an Olympian?",
-            p3: <>We suggest you to read our <a target="_blank" rel="noopener noreferrer" href="https://blog.beyondcurriculum.kz/getting-started-with-olympiads/">blog post</a> for details.</>
+            p3: <>We suggest you to read our <a target="_blank" rel="noopener noreferrer" href="https://blog.bc-pf.org/getting-started-with-olympiads/">blog post</a> for details.</>
         },
         algorithm: {
             title: "Calculation algorithm",
@@ -160,8 +160,8 @@ export default {
             },
             values: {
                 transparency: ["5 points — official solutions and scheme marks for all grades are published on the Internet", "3 points — partial solutions with scheme marks are available on the Internet for some (or all) grades", "2 points — partial solutions are available on the Internet without scheme marks for some grades ", "1 point — official solutions and scheme marks are not published on the Internet"],
-                uniqueness: ["5 points — all are copyright assignments compiled specifically for the Olympiad, not translated from existing assignments", "3 points — copyright assignments make up at least 60% of the points number", "2 points — copyright assignments make up at least 40% of the points number", "1 point — copyright assignments make up below 40% of the points number"],
-                screening: ["5 points — out of 100 (or more) applicants, 1 is allowed to partake", "4 points — out of 50-99 applicants, 1 is allowed to partake", "3 points — out of 10-49 applicants, 1 is allowed to partake", "2 points — out of 2-9 applicants, 1 is allowed to partake", "1 point — anyone interested is allowed to partake "],
+                uniqueness: ["5 points — all assignments are written specifically for the Olympiad, not translated or adapted from existing assignments", "3 points — unique assignments (i.e. created specifically for the olympiad) make up at least 60% of the points number", "2 points — unique assignments make up at least 40% of the points number", "1 point — unique assignments make up below 40% of the points number"],
+                screening: ["5 points — out of 100 (or more) applicants, 1 is allowed to participate", "4 points — out of 50-99 applicants, 1 is allowed to participate", "3 points — out of 10-49 applicants, 1 is allowed to participate", "2 points — out of 2-9 applicants, 1 is allowed to participate", "1 point — anyone interested is allowed to participate "],
                 award: ["5 points — number of 1st places/Gold medals does not exceed 3%, number of 2nd places/Silver medals does not exceed 7%, number of 3rd places/Bronze medals does not exceed 10%", "4 points — number of 1st places/Gold medals does not exceed 5%, number of 2nd places/Silver medals does not exceed 10%, number of 3rd places/Bronze medals does not exceed 15%", "3 points — number of 1st places/Gold medals does not exceed 10%, number of 2nd places/Silver medals does not exceed 20%, number of 3rd places/Bronze medals does not exceed 30%", "1 point — number of 1st places/Gold medals does not exceed 10%, number of 2nd places/Silver medals does not exceed 30%, number of 3rd places/Bronze medals does not exceed 40%"]
             }
         },
@@ -174,7 +174,7 @@ export default {
             countries: "countries",
             page: {
                 t1: "Olympiads Ranking",
-                p1: <>Nowadays, there is a number of Olympiads held on a regular basis, and it is difficult to comprehend the value of a particular Olympiad or a medal to someone unfamiliar with the movement. To solve this issue, our <a target="_blank" rel="noopener noreferrer" href="https://beyondcurriculum.kz/members">Fund's experts council</a> evaluates each Olympiad in five categories:"</>,
+                p1: <>Nowadays, there is a number of Olympiads held on a regular basis, and it is difficult to comprehend the value of a particular Olympiad or a medal to someone unfamiliar with the movement. To solve this issue, our <a target="_blank" rel="noopener noreferrer" href="https://bc-pf.org/members">Fund's experts council</a> evaluates each Olympiad in five categories:"</>,
                 list: [
                     "Transparency of evaluation (up to 5 points);", "Assignment uniqueness (up to 5 points);", "Screening selectivity (up to 5 points);", "Award selectivity (up to 5 points);", "Credibility (neutral, ?, !, !! or !!!)"],
                 p2: "On each Olympiad's page, you will find our assessment of each category at a 5-point scale. Here is our suggestion of an algorithm for evaluation of each category."
@@ -205,9 +205,9 @@ export default {
             title: "Would you like to create your profile?",
             p: (
                 <>
-                    1. Prepare diplomas from all Olympiads you have partaken
+                    1. Prepare diplomas from all Olympiads you have participated in
                     <br />
-                    2. Send an email to <a href="mailto:scoreboard@bcedu.kz">scoreboard@bcedu.kz</a> and don't forget to mention your full name, your school, and attach links to Olympiad results where you took part, plus include scanned diplomas
+                    2. Send an email to <a href="mailto:scoreboard@bc-pf.org">scoreboard@bc-pf.org</a> and don't forget to mention your full name, your school, and attach links to Olympiad results where you took part, plus include scanned diplomas
                 </>
             )
         }
@@ -217,7 +217,7 @@ export default {
         support: "Осы жобаны қолдаңыз",
         oops: {
             title: "Аты-жөніңіз қате жазылған ба?",
-            p: <>Олимпиада нәтижелерінде қате байқаған болсаңыз, <a href="mailto:scoreboard@bcedu.kz">scoreboard@bcedu.kz</a> поштасына сол сілтемені жіберуіңізді сұраймыз.</>
+            p: <>Олимпиада нәтижелерінде қате байқаған болсаңыз, <a href="mailto:scoreboard@bc-pf.org">scoreboard@bc-pf.org</a> поштасына сол сілтемені жіберуіңізді сұраймыз.</>
         },
         nav: {
             results: "Нәтижелер",
@@ -250,7 +250,7 @@ export default {
             ],
             p2: <>Алғашқы 5 олимпиада Республиқалық олимпиаданың деңгейлеріне жатады. Осы олимпиадалар (осы олимпиадаларды <a target="_blank" rel="noopener noreferrer" href="http://daryn.kz/">РҒПО "Дарын"</a>) өткізетін болғандықтан,оларды Дарын олимпиадалары деп атайды) қазан-қараша айларында басталады. Егер сіз алдыңғы кезеңді сәтті тапсырсаңыз, келесі кезеңге өтесіз. Соңында, шілде айында Халықаралық олимпиадаға баратын Қазақстан Республикасының ұлттық құрамасына 4-тен 6 адамға дейін іріктеліп алынады. International Science Olympiads құрамына кіретін халықаралық олимпиадаларға IMO, IPhO, IOI, IChO, IBO және IESO жатады. Олар «Олимпиада ойындарының» өзіндік бір түрі - олимпиадалық шыңының шыңы. Кейбір университеттер осындай олмипиадалардың жеңімпаздарына автоматты түрде гранттар береді, ал кейбіреулеріне түсу мүмкіндіктерін айтарлықтай жақсартады.</>,
             t2: "Олимпиадамен қалай айналысып бастауға болады?",
-            p3: <>Бұл туралы біздің <a target="_blank" rel="noopener noreferrer" href="https://blog.beyondcurriculum.kz/getting-started-with-olympiads/">блог жазбаларын</a> оқуды ұсынамыз.</>
+            p3: <>Бұл туралы біздің <a target="_blank" rel="noopener noreferrer" href="https://blog.bc-pf.org/getting-started-with-olympiads/">блог жазбаларын</a> оқуды ұсынамыз.</>
         },
         algorithm: {
             title: "Есептеу алгоритмі",
@@ -277,7 +277,7 @@ export default {
             countries: "елдер",
             page: {
                 t1: "Олимпиадалар рейтингі ",
-                p1: <>Қазіргі уақытта көптеген олимпиадалар өткізіледі және олимпиадалық қозғалысты жақсы түсіне білмейтін адамға белгілі бір олимпиаданың немесе сол олимпиададағы медальдің қаншалықты құнды екенін түсіну өте қиын. Осы мәселені шешу үшін, <a target="_blank" rel="noopener noreferrer" href="https://beyondcurriculum.kz/members">Қордың сарапшылық кеңесі</a> әр олимпиаданы үш санат бойынша бағалайды:"</>,
+                p1: <>Қазіргі уақытта көптеген олимпиадалар өткізіледі және олимпиадалық қозғалысты жақсы түсіне білмейтін адамға белгілі бір олимпиаданың немесе сол олимпиададағы медальдің қаншалықты құнды екенін түсіну өте қиын. Осы мәселені шешу үшін, <a target="_blank" rel="noopener noreferrer" href="https://bc-pf.org/members">Қордың сарапшылық кеңесі</a> әр олимпиаданы үш санат бойынша бағалайды:"</>,
                 list: [
                     "Бағалау ашықтығы (5 ұпайға дейін)", "Тапсырмалардың қайталанбастығы (5 ұпайға дейін)", "Іріктеу таңдамалылығы (5 ұпайға дейін)", "Марапаттау таңдамалылығы (5 ұпайға дейін)", "Олимпиаданың беделі (бейтарап, ?, !, !! немесе !!!)"],
                 p2: "Әр олимпиаданың веб парақшасында, сіз әр санат бойынша 5 ұпайлық шкала бойынша біздің бағамызды көре аласыз. Төменде біз әр санаттың бағалау алгоритмін ұсынамыз."
@@ -310,7 +310,7 @@ export default {
                 <>
                     1. Дипломдарыңызды дайындаңыз
                     <br />
-                    2. <a href="mailto:scoreboard@bcedu.kz">scoreboard@bcedu.kz</a> поштасына өзініздің толық аты-жөніңізді, дипломдарыңызды, мектебіңізді және қатысқан олимпиаданың нәтижелеріне сілтемені жіберіңіз.
+                    2. <a href="mailto:scoreboard@bc-pf.org">scoreboard@bc-pf.org</a> поштасына өзініздің толық аты-жөніңізді, дипломдарыңызды, мектебіңізді және қатысқан олимпиаданың нәтижелеріне сілтемені жіберіңіз.
                 </>
             )
         }
