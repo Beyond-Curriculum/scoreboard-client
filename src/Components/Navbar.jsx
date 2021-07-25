@@ -81,6 +81,12 @@ const Navbar = ({ lang, changeLocale }) => {
                     })} to="/hall" activeClassName={classes.active} className={classes.link}>
                         {l.nav.hall}
                     </NavLink>
+                    <NavLink onClick={() => setState({
+                        ...state,
+                        menu: false
+                    })} to="/contributors" activeClassName={classes.active} className={classes.link}>
+                        {l.contributors.title}
+                    </NavLink>
                     <a onClick={() => setState({
                         ...state,
                         menu: false

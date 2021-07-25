@@ -109,6 +109,10 @@ export default {
                     2. Напишите на почту <a href="mailto:scoreboard@bc-pf.org">scoreboard@bc-pf.org</a> отправив свое ФИ, сканы дипломов, школу и ссылки на результаты олимпиад, в которых вы участвовали.
                 </>
             )
+        },
+        contributors: {
+            title: 'Кураторы сайта | Помощники',
+            text: 'База результатов Scoreboard собирается не сама собой — в ее создании принимают участие десятки людей. На этой странице мы даем им заслуженную минуту внимания и выражаем благодарность.',
         }
     },
     en: {
@@ -214,6 +218,10 @@ export default {
                     2. Send an email to <a href="mailto:scoreboard@bc-pf.org">scoreboard@bc-pf.org</a> and don't forget to mention your full name, your school, and attach links to Olympiad results where you took part, plus include scanned diplomas
                 </>
             )
+        },
+        contributors: {
+            title: 'Contributors',
+            text: "The data presented at Scoreboard didn't collect itself; it was meticulously collected, parsed, and uploaded by dozens of people. On this page we give them a moment of glory and thank them for their contributions",
         }
     },
     kk: {
@@ -319,6 +327,10 @@ export default {
                     2. <a href="mailto:scoreboard@bc-pf.org">scoreboard@bc-pf.org</a> поштасына өзініздің толық аты-жөніңізді, дипломдарыңызды, мектебіңізді және қатысқан олимпиаданың нәтижелеріне сілтемені жіберіңіз.
                 </>
             )
+        },
+        contributors: {
+            title: 'Үлес қосқандар',
+            text: "Scoreboard нәтижелерінің базасы өздігінен жиналмайды, оны құруға ондаған адам қатысады. Бұл бетте біз оларға лайықты көңіл бөліп, алғысымызды білдіреміз.",
         }
     }
 }

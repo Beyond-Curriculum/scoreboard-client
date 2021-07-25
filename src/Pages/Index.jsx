@@ -13,6 +13,7 @@ import Footer from '../Components/Footer';
 import Algorithm from './Algorithm';
 import NotFound from './NotFound';
 import { useMatomo } from '@datapunt/matomo-tracker-react'
+import Contributors from './Contributors';
 
 const Index = () => {
     const { trackPageView } = useMatomo()
@@ -29,6 +30,7 @@ const Index = () => {
             <Navbar />
             <Switch>
                 <Route path="/" exact component={Home} />
+                <Route path="/contributors" exact component={Contributors} />
                 <Route path="/olympiads" exact component={What} />
                 <Route path="/results" exact component={Subjects} />
                 <Route path="/results/:path" exact component={Olympiads} />
