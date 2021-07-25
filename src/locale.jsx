@@ -12,6 +12,8 @@ export default {
             results: "Результаты",
             hall: "Зал Славы",
             home: "О проекте",
+            olympiads: 'Задачи',
+            ask: 'Ask',
         },
         results: {
             subject: "Выберите предмет",
@@ -120,6 +122,8 @@ export default {
             results: "Results",
             hall: "Hall of Fame",
             home: "About",
+            olympiads: 'Problems',
+            ask: 'Ask'
         },
         results: {
             subject: "Choose discipline",
@@ -223,6 +227,8 @@ export default {
             results: "Нәтижелер",
             hall: "Даңқ залы",
             home: "Жоба туралы",
+            olympiads: 'Есептер',
+            ask: 'Ask',
         },
         results: {
             subject: "Пәнді тандаңыз",

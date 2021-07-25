@@ -81,6 +81,18 @@ const Navbar = ({ lang, changeLocale }) => {
                     })} to="/hall" activeClassName={classes.active} className={classes.link}>
                         {l.nav.hall}
                     </NavLink>
+                    <a onClick={() => setState({
+                        ...state,
+                        menu: false
+                    })} href="https://olympiads.bc-pf.org/" className={classes.link}>
+                        {l.nav.olympiads}
+                    </a>
+                    <a onClick={() => setState({
+                        ...state,
+                        menu: false
+                    })} href="https://ask.bc-pf.org/" className={classes.link}>
+                        {l.nav.ask}
+                    </a>
                     <div onClick={() => setState({
                         ...state,
                         langMenu: !state.langMenu
