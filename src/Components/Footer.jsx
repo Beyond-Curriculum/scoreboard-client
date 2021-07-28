@@ -20,6 +20,7 @@ const Footer = ({ lang }) => {
                 <a href="https://bc-pf.org"><img src={beyond} height={32} alt="BeyondCurriculum" /></a>
                 <div className={classes.flex}>
                     <div className={classes.copyright}>© <a href="https://bc-pf.org">Beyond Curriculum PF</a> 2020-2021</div>
+                    <a className={classes.link} href="/contributors">{l.contributors.title}</a>
                     <a className={classes.link} href="https://bc-pf.org/donate">{l.support + " "}<span aria-label="heart" role="img">❤️</span></a>
                 </div>
             </div>
