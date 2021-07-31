@@ -29,7 +29,7 @@ const PEOPLE = {
         "Косман Адам"
     ],
     "en": [
-        "Azamat Zhaxylykov",
+        "Azamat Zhaksylykov",
         "Ulan Seitkaliyev",
         "Anton Morgunov",
         "Aray Adylkhan",
