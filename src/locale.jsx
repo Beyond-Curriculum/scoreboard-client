@@ -25,7 +25,7 @@ export default {
         },
         home: {
             title: "О проекте",
-            p1: "Залог любого процветающего государства — образование и наука. При этом, к сожалению, в нынешнем обществе примерами для подражания являются блогеры и «тиктокеры».",
+            p1: "Залог любого процветающего государства — образование и наука. К сожалению, настоящее поколение перестало равняться на ровесников олимпиадников, ученых, инженеров и учителей, которые вносят вклад в развитие мира.",
             p2: "Тем не менее, в Казахстане немало школьников, которые не только хорошо учатся, но и выходят за рамки школьной программы и участвуют в олимпиадах, благодаря чему достигают высот в своей жизни.",
             p3: "Этим проектом мы чествуем таких ребят и предлагаем новых кумиров для молодежи."
         },
@@ -139,7 +139,7 @@ export default {
         },
         home: {
             title: "About the project",
-            p1: `Education and science are cornerstones to prosperity of any state. Regrettably, our society today is increasingly driven by social media and grants an influential status to bloggers and so called "tiktokers".`,
+            p1: `Education and science are cornerstones to prosperity of any state. Regrettably, the new generation doesn't look up to olympians, scientists, engineers and teachers, who drive our society forward.`,
             p2: "In Kazakhstan, nevertheless, quite a few schoolchildren not only study well, but strive to go beyond the curriculum by partaking in academic Olympiads and succeed in life as a result.",
             p3: "This project is created to honor these children presenting the alternative new role models for our youth."
         },
@@ -248,7 +248,7 @@ export default {
         },
         home: {
             title: "Жоба туралы",
-            p1: `Кез-келген өркендеген мемлекеттің кепілі - білім мен ғылым. Сонымен бірге, өкінішке орай, қазіргі қоғамда блогерлер мен «тиктокерлер» үлгі болып табылады.`,
+            p1: `Кез-келген өркендеген мемлекеттің кепілі - білім мен ғылым. Өкінішке орай, қазіргі ұрпақ әлемнің дамуына үлес қосып жатқан пәндік олимпиадалардың жеңімпаздарын, ғалымдарды, инженерлер мен мұғалімдерді мақтан тұтып, олардан үлгі алуды қойған.`,
             p2: "Алайда Қазақстанда жақсы оқып қана қоймай, мектеп бағдарламасынан тыс білім іздейтін және соның арқасында олимпиадаларға қатысып, өмірлерінде биік шыңдарға қол жеткізетін мектеп оқушылары да аз емес.",
             p3: "Осы жобаның іске асырылуымен, біз осындай оқушыларды құрметтейтінімізді көрсетіп, жастарға жаңа үлгі тұтар тұлғаларды ұсынамыз."
         },
